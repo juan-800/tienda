@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Poppins;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 15px;
+	background-color: #000;
+	color: #fff;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav,
+.user {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.username {
+	color: #fff;
+}
+
+.btn-logout {
+	border: 1px solid #fff;
+	background: none;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.btn-logout:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/*  */
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding: 40px;
+	background: white;
+
+}
+h1 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #333;
+  }
+  
+  /* Inputs */
+  .input-group {
+	position: relative;
+	margin-bottom: 20px;
+	width: 100%;
+  }
+  
+  .input-group input {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+	transition: all 0.3s ease;
+  }
+  
+  .input-group label {
+	position: absolute;
+	top: 14px;
+	left: 12px;
+	font-size: 14px;
+	color: #777;
+	transition: 0.3s;
+  }
+  
+  /* Animación cuando el input está en foco o tiene contenido */
+  .input-group input:focus,
+  .input-group input:not(:placeholder-shown) {
+	border-color: #1e3c72;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+	top: -8px;
+	left: 10px;
+	font-size: 12px;
+	color: #1e3c72;
+	background: white;
+	padding: 0 5px;
+  }
+  
+  /* Botón */
+  button {
+	width: 100%;
+	padding: 12px;
+	background: #1e3c72;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+  }
+  
+  button:hover {
+	background: #2a5298;
+  }
