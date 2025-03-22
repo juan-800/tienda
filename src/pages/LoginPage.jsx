@@ -67,7 +67,7 @@ export const LoginPage = () => {
           <label htmlFor='password'>Contraseña:</label>
 
         </div>
-        <button>Iniciar secion</button>
+        <button>Iniciar sesion</button>
       </form>
 
     </div> 
