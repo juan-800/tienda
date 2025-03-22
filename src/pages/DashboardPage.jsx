@@ -1,5 +1,5 @@
 import { Header } from "../components/Header";
-import { ProductList } from "../components/ProductList";
+import { ProductList } from "../components/ProductListTemp";
 import { useState } from "react";
 
 export const DashboardPage = () => {

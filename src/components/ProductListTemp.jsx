@@ -24,6 +24,7 @@ export const ProductList = ({
 		setCountProducts(countProducts + product.quantity);
 		setAllProducts([...allProducts, product]);
 	};
+	console.log(allProducts);
 
 	return (
 		<div className='container-items'>

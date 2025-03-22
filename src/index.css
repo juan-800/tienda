@@ -4,43 +4,51 @@
 	font-family: Poppins;
 	box-sizing: border-box;
 }
-
+/* definir cuerpo*/
 body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
+ /* Estilos del header */
 header {
 	display: flex;
-	justify-content: space-between; /* Separa los elementos */
+	justify-content: space-between;
 	align-items: center; /* Alineación vertical */
 	padding: 15px 40px;
 	background-color: #78a5f9;
 	color: #fff;
 }
 
-
-h1 a {
-	text-decoration: none;
-	color: #fff;
-}
-
+/* estilo navegacion*/
 nav,
 .user {
 	display: flex;
 	align-items: center;
 	gap: 20px;
 }
-
+/*Estilo botones en el inicio del menu*/
 nav a {
 	text-decoration: none;
+	border: 1px solid #fff;
+	background: none;
 	color: #fff;
+	padding: 5px 20px;
+	border-radius: 6px;
+	cursor: pointer;
 }
 
+nav a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/*color  del usuario*/
 .username {
 	color: #fff;
 }
 
+/* caractrisitcias del boton cerrar sesion*/
 .btn-logout {
 	border: 1px solid #fff;
 	background: none;
@@ -55,7 +63,7 @@ nav a {
 	color: #000;
 }
 
-/*  */
+/* carasteristicas al formulario inicio de sesion */
 
 .wrapper {
 	display: flex;
@@ -72,16 +80,16 @@ h1 {
 	margin-bottom: 20px;
 	font-size: 24px;
 	color: #333;
-  }
-  
-  /* Inputs */
-  .input-group {
+}
+
+  /* estilos inputs */
+.input-group {
 	position: relative;
 	margin-bottom: 20px;
 	width: 100%;
-  }
-  
-  .input-group input {
+}
+
+.input-group input {
 	width: 100%;
 	padding: 12px;
 	border: 2px solid #ccc;
@@ -89,35 +97,35 @@ h1 {
 	font-size: 16px;
 	outline: none;
 	transition: all 0.3s ease;
-  }
-  
-  .input-group label {
+}
+/* etiqueta flotante*/
+.input-group label {
 	position: absolute;
 	top: 14px;
 	left: 12px;
 	font-size: 14px;
 	color: #777;
 	transition: 0.3s;
-  }
-  
+}
+
   /* Animación cuando el input está en foco o tiene contenido */
-  .input-group input:focus,
-  .input-group input:not(:placeholder-shown) {
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
 	border-color: #1e3c72;
-  }
-  
-  .input-group input:focus + label,
-  .input-group input:not(:placeholder-shown) + label {
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
 	top: -8px;
 	left: 10px;
 	font-size: 12px;
 	color: #1e3c72;
 	background: white;
 	padding: 0 5px;
-  }
-  
-  /* Botón */
-  button {
+}
+
+  /*  estilo para Botón */
+button {
 	width: 100%;
 	padding: 12px;
 	background: #1e3c72;
@@ -126,32 +134,14 @@ h1 {
 	border-radius: 5px;
 	font-size: 16px;
 	cursor: pointer;
-	transition: background 0.3s ease;
-  }
-  
-  button:hover {
+	transition: 0.3s ease;
+}
+
+button:hover {
 	background: #2a5298;
-  }
-
-
-
-
-  /* Globales */
-*::after,
-*::before,
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 }
 
-body {
-	margin: 0 auto;
-	max-width: 1200px;
-	font-family: 'Lato';
-	color: #333;
-}
-
+/*icono del carrito*/
 .icon-cart {
 	width: 40px;
 	height: 40px;
@@ -165,34 +155,31 @@ body {
 img {
 	max-width: 100%;
 }
-
-/* Header */
-
-
+/* Contenedor principal del ícono del carrito */
 .container-icon {
 	position: relative;
 }
-
+/* Contador de productos en el carrito */
 .count-products {
 	position: absolute;
 	top: 55%;
 	right: 0;
-
 	background-color: #000;
 	color: #fff;
 	width: 25px;
 	height: 25px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 }
 
+/* Estilo para el número dentro del contador */
 #contador-productos {
 	font-size: 12px;
 }
 
+/*contenedor carrito*/
 .container-cart-products {
 	position: absolute;
 	top: 50px;
@@ -204,16 +191,16 @@ img {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 }
-
+/* Estilos de los productos dentro del carrito */
 .cart-product {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 30px;
-
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* Información del producto en el carrito */
 .info-cart-product {
 	display: flex;
 	justify-content: space-between;
@@ -221,24 +208,26 @@ img {
 	color: black;
 }
 
+/* Estilo para el nombre del producto */
 .titulo-producto-carrito {
 	font-size: 20px;
 	color: black;
 }
-
+/* Estilo para el precio del producto */
 .precio-producto-carrito {
 	font-weight: 700;
 	font-size: 20px;
 	margin-left: 10px;
 	color: black;
 }
-
+/* Estilo para la cantidad del producto */
 .cantidad-producto-carrito {
 	font-weight: 400;
 	font-size: 20px;
 	color: black;
 }
 
+/* Botón de eliminar producto */
 .icon-close {
 	width: 25px;
 	height: 25px;
@@ -250,6 +239,7 @@ img {
 	cursor: pointer;
 }
 
+/*total a pagar*/
 .cart-total {
 	display: flex;
 	justify-content: center;
@@ -269,29 +259,30 @@ img {
 	font-size: 20px;
 	font-weight: 900;
 }
-
+/* Oculta el carrito cuando no hay productos */
 .hidden-cart {
 	display: none;
 }
 
-/* Main */
+/* productos */
 .container-items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	column-gap: 15px;
+	row-gap: 20px;
 }
-
+/* Estilos generales de los productos */
 .item {
 	border-radius: 10px;
 }
-
+/* Efecto de sombra cuando se pasa el cursor */
 .item:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+/* Estilos de las imágenes dentro de los productos */
 .item img {
 	width: 100%;
-	height: 300px;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 10px 10px 0 0;
 	transition: all 0.5s;
@@ -330,12 +321,13 @@ img {
 .cart-empty {
 	padding: 20px;
 	text-align: center;
+	color: #000;
 }
 
 .hidden {
 	display: none;
 }
-
+/*boton limpiar carrito*/
 .btn-clear-all {
 	border: none;
 	background-color: #000;
@@ -348,12 +340,40 @@ img {
 	border-bottom-right-radius: 10px;
 	font-family: inherit;
 	cursor: pointer;
-  font-size: 16px;
-  transition: all .3s ease;
+	font-size: 16px;
+	transition: all .3s ease;
 }
 
 .btn-clear-all:hover{
-  background-color: #333;
-  transform: scale(1.03);
-  border-radius: 0;
+	background-color: #333;
+	transform: scale(1.03);
+	border-radius: 0;
 }
+
+
+/*Modificar  pagina de bienvenida*/
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	background-color: #f8f8f8;
+}
+
+/* Modificarimagen central*/
+.home-image {
+	width: 60%;
+	max-width: 800px;
+	border-radius: 15px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Modificar titulo*/
+.title{
+	font-size: 2.5rem;
+	color: #333;
+	margin-bottom: 20px;
+  }
