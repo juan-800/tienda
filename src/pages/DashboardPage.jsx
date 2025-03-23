@@ -1,7 +1,7 @@
 import { Header } from "../components/Header";
 import { ProductList } from "../components/ProductListTemp";
 import { useState } from "react";
-
+//  Página principal que gestiona el estado del carrito y la lista de productos
 export const DashboardPage = () => {
   const [allProducts, setAllProducts] = useState([]);
   const [countProducts, setCountProducts] = useState(0);
@@ -9,6 +9,7 @@ export const DashboardPage = () => {
 
   return (
     <>
+    {/* Componente Header que muestra información del carrito */}
       <Header
         allProducts={allProducts}
         setAllProducts={setAllProducts}
@@ -17,6 +18,7 @@ export const DashboardPage = () => {
         setCountProducts={setCountProducts}
         setTotal={setTotal}
       />
+      {/* Componente ProductList que muestra la lista de productos disponibles */}
       <ProductList
         allProducts={allProducts}
         setAllProducts={setAllProducts}

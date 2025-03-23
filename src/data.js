@@ -1,3 +1,5 @@
+//Base de datos de los productos 
+
 export const data=[
     {
 		id: 1,

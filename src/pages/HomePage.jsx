@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.jpg';
-
+//Página de inicio de la tienda Naturis
 export const HomePage = () => {
   return (
     <div className="home-container">
